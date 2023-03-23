@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body, script{
+            background-color: rgb(7, 87, 107);
+            font: normal 20pt arial;
+            color: rgb(255, 217, 0);
+            text-align: center;
+            line-height: 50px;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 200px;
+        }
+    </style>
+    <title>Exercícios JavaScript</title>  
+</head>
+<body>
+    <h1>Teste de Nacionalidade Brasileira</h1>
+    Em qual país você nasceu? <input type="text" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="nacio"></div>
+    <script>
+        function verificar(){
+            var p = window.document.querySelector("input#pais").value
+            var pais = p.toUpperCase()
+            var nacio = window.document.querySelector("div#nacio")
+            if (pais.trim() === "") {
+                nacio.innerHTML = "Por favor, insira o país em que você nasceu.";
+            } else if (pais == "BRASIL"){
+                nacio.innerHTML = `Você nasceu no país chamado: ${pais} <br> Você é Brasileiro`                
+            } else {
+                nacio.innerHTML = `Você nasceu no país chamado: ${pais} <br> Você é Estrangeiro`                
+            }
+        }
+              
+    </script>
+
+</body>
+</html>

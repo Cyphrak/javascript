@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body, script{
+            background-color: rgb(7, 87, 107);
+            font: normal 20pt arial;
+            color: rgb(255, 217, 0);
+            text-align: center;
+            line-height: 50px;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+    </style>
+    <title>Exercícios JavaScript</title>  
+</head>
+<body>
+    <h1>Radar</h1>
+    Velocidade do Carro:<input type="number" id="textvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById("textvel")
+            var vel = Number(txtv.value)
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Sua velocidade é ${vel}`
+            if (vel > 60){
+                res.innerHTML = `Sua velocidade é ${vel} <br>
+                Sua velocidade é superior ao limite permitido, você será multado`
+            } else {
+                res.innerHTML = `Sua velocidade é ${vel} <br>
+                Dirija com cuidado, usando sempre o cinto de segurança!`
+
+            }
+        }
+              
+    </script>
+
+</body>
+</html>
