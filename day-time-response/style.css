@@ -2,7 +2,7 @@
 
 body{
     background-color: rgb(0, 0, 0);
-    font: bolder 25pt arial;    
+    font: bolder 15pt arial;    
 }
 header{
     color: white;
@@ -16,7 +16,7 @@ section{
     background-color: white;
     border-radius: 10px;
     width: 350px;
-    padding: 15px;
+    padding: 5px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
 }
