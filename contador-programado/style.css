@@ -9,13 +9,21 @@ header{
     text-align: center;
 }
 section{
+    text-align: left;
     color: black;
     background-color: white;
     border-radius: 10px;
-    width: 500px;
-    padding: 15px;
+    width: 400px;
+    padding: 10px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+}
+section > p{
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+section > div#res{
+    margin-top: 15px;
 }
 footer{
     color: white;
